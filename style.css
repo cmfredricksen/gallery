@@ -5,10 +5,11 @@
 }
 
 body {
+    background-size: cover;
     background-color: black;
     display: grid;
-    grid-template-columns: 30vw 70vw;
-    grid-template-rows: 35vh 35vh 25vh;
+    grid-template-columns: 30vw 70vw ;
+    grid-template-rows: 40vh 35vh 25vh;
     grid-template-areas: 
      "head main"
      "head main"
@@ -30,6 +31,10 @@ h3 {
     color: white;
 }
 
+h6 {
+    color: hotpink;
+}
+
 p {
     font-size: smaller;
     padding-top: 2vmax;
@@ -44,6 +49,11 @@ a {
 
 a:hover {
     color: darkred
+}
+
+img {
+    background-color: black;
+    
 }
 
 
@@ -73,11 +83,13 @@ li {
     background-color: white;
     display: grid;
     row-gap: .5em solid lightgreen;
+    border-bottom: hotpink 1px solid;
 }
 
 .foot {
     color: hotpink;
     padding-left: 1em;
     margin: auto;
+    
 }
 
