@@ -4,27 +4,66 @@
 }
 
 body {
-    background-color: darkslateblue;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+     "head main main"
+     "head main main"
+     "head main main"
+     "head foot foot";
+    
+    
+
+    
     
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: deepskyblue;
+    color: darkred;
+    padding-top: .75em;
+    padding-bottom: .75em;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr 1.5fr;
-    grid-row: 150px auto;
+h3 {
+    color: white;
 }
+
+p {
+    font-size: smaller;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkred
+}
+
+
 
 .head {
-    grid-column: 1;
-    border: 1pt solid fuchsia;
-    height: 200px;
-    width: 1fr;
+    grid-area: head;
+    
+    background-color: hotpink;
+    grid-auto-flow: row;
+
+    
     padding: 1.5em;
-    background-image: url(https://galleryofplaces.com/wp-content/uploads/2019/09/5C6B76E7-A0B9-4581-93F2-C6585B15EDBA-e1572407383515.jpeg);
-    object-fit: cover;
+   
+}
+
+ul {
+    text-decoration-style: none;
+    list-style: none;
+}
+
+li {
+    padding: .5em;
 }
 
