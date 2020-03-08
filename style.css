@@ -24,4 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     width: 1fr;
     padding: 1.5em;
+    background-image: url(https://galleryofplaces.com/wp-content/uploads/2019/09/5C6B76E7-A0B9-4581-93F2-C6585B15EDBA-e1572407383515.jpeg);
+    object-fit: cover;
 }
+
