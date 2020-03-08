@@ -1,18 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 35vh 35vh 25vh;
     grid-template-areas: 
-     "head main main"
-     "head main main"
-     "head main main"
-     "head foot foot";
+     "head main"
+     "head main"
+     "head foot";
     
     
 
@@ -22,8 +22,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: darkred;
-    padding-top: .75em;
-    padding-bottom: .75em;
+    padding-top: 3vmax;
+    
 }
 
 h3 {
@@ -32,8 +32,9 @@ h3 {
 
 p {
     font-size: smaller;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 2vmax;
+    padding-bottom: .5em;;
+   
 }
 
 a {
@@ -65,5 +66,18 @@ ul {
 
 li {
     padding: .5em;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+    display: grid;
+    row-gap: .5em solid lightgreen;
+}
+
+.foot {
+    color: hotpink;
+    padding-left: 1em;
+    margin: auto;
 }
 
