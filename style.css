@@ -13,27 +13,21 @@ body {
     grid-template-areas: 
      "head main"
      "head main"
-     "head foot";
-    
-    
-
-    
-    
+     "head foot";    
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: darkred;
-    padding-top: 3vmax;
-    
+    padding-top: .5rem;    
 }
 
 h3 {
-    color: white;
+    color: darkred;
 }
 
 h5 {
     color: lightgoldenrodyellow;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 
 h6 {
@@ -47,9 +41,16 @@ p {
    
 }
 
+p2 {
+  color: black;
+  padding-bottom: 1rem;
+  font-style: italic;
+
+}
 a {
     color: white;
     text-decoration: none;
+    padding-top: .5rem;
 }
 
 a:hover {
@@ -61,17 +62,17 @@ img {
     
 }
 
-
+hr {
+    color: lightgoldenrodyellow;
+    margin: 10px 0;
+}
 
 .head {
     grid-area: head;
-    
     background-color: hotpink;
-    grid-auto-flow: row;
-
-    
-    padding: 1.5em;
-   
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline;  
 }
 
 ul {
@@ -94,12 +95,9 @@ li {
 .foot {
     grid-area: foot;
     color: hotpink;
-    font-size: x-small;
     display: grid;
     grid-template-columns: 80%;
     margin: auto;
-    
-
-    
+    padding-left: 1em;   
 }
 
