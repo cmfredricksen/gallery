@@ -28,6 +28,8 @@ h3 {
 h5 {
     color: lightgoldenrodyellow;
     padding-bottom: .5rem;
+    font-style: italic;
+    margin: auto;
 }
 
 h6 {
@@ -72,7 +74,8 @@ hr {
     background-color: hotpink;
     padding-left: 1em;
     padding-right: 1em;
-    display: inline;  
+    display: inline; 
+    grid-row: 25vh auto;
 }
 
 ul {
