@@ -8,12 +8,12 @@ body {
     background-size: cover;
     background-color: lightgoldenrodyellow;
     display: grid;
-    grid-template-columns: 30vw 70vw ;
-    grid-template-rows: 40vh 35vh 25vh;
+    grid-template-rows: 200px 3fr 50px .5fr;
     grid-template-areas: 
-     "head main"
-     "head main"
-     "head foot";    
+     "head"
+     "main"
+     "nav"
+     "foot";    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    color: darkred;
+    color: lightgoldenrodyellow;
 }
 
 h5 {
@@ -37,8 +37,8 @@ h6 {
 }
 
 p {
-    font-size: smaller;
-    padding-top: 2vmax;
+    color: lightpink;
+    padding-top: 1em;
     padding-bottom: .5em;
    
 }
@@ -47,6 +47,11 @@ p2 {
   color: black;
   padding-bottom: 1rem;
   font-style: italic;
+
+}
+
+p3 {
+    padding-top: 1.5em;
 
 }
 a {
@@ -60,7 +65,9 @@ a:hover {
 }
 
 img {
-    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: auto;
     
 }
 
@@ -74,8 +81,7 @@ hr {
     background-color: hotpink;
     padding-left: 1em;
     padding-right: 1em;
-    display: inline; 
-    grid-row: 25vh auto;
+    text-align: center;
 }
 
 ul {
@@ -85,14 +91,28 @@ ul {
 
 li {
     padding: .5em;
+    list-style: none;
+    display: inline;
 }
 
 .main {
     grid-area: main;
-    background-color: white;
+    background-color: hotpink;
     display: grid;
-    row-gap: .5em solid lightgreen;
-    border-bottom: hotpink 1px solid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "main1"
+      "main2"
+      "main3";
+    
+   
+}
+
+.nav {
+    grid-area: nav;
+    background-color: hotpink;
+    text-align: center;
+    padding-top: 1em;
 }
 
 .foot {
@@ -101,6 +121,34 @@ li {
     display: grid;
     grid-template-columns: 80%;
     margin: auto;
-    padding-left: 1em;   
+    padding-left: 1em; 
+    padding-top: 1.5em;;  
+}
+
+.main1 {
+    align-items: center;
+
+}
+
+.box1 {
+    width: 80%;
+    height: auto;
+    background-color: darkmagenta;
+    color: palegoldenrod;
+    padding: 1em 2em;
+    margin:auto;
+    
+}
+
+.main2 {
+    background-color: indigo;
+    text-align: center;
+
+}
+
+.main3 {
+    background-color: limegreen;
+    padding: .5em;
+    
 }
 
