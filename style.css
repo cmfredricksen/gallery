@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
     color: lightgoldenrodyellow;
+    vertical-align: middle;
 }
 
 h5 {
@@ -156,7 +157,7 @@ li {
 
 .main3 {
     background-color: limegreen;
-    padding: 2em 1.5em;
+    padding: 1em 1.5em;
     grid-area: main3;
     
 }

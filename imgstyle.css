@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgoldenrodyellow;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: 
+    "1fr 1fr 1fr 1fr 1fr" 33.33vh
+    "1fr 1fr 1fr 1fr 1fr" 33.33vh
+    "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    grid-gap: 5px;
+}
+
+.box {
+    position: relative;
+   
+}
+
+.boxa {
+    
+    background-color: lightgreen;
+    grid-column: span 2;
+    
+    
+}
+
+.boxb {
+    background-color: lightpink;
+    
+}
+
+.boxc {
+    
+    background: lightpink;
+    
+
+}
+
+.boxd {
+    
+    background: lightgreen;
+    grid-row: span 2;
+
+}
+
+.boxe {
+    
+    background: lightpink;
+    
+
+}
+
+.boxf {
+    
+    background: lightgreen;
+    grid-column: span 2;
+
+}
+
+.boxg {
+    
+    background: lightpink;
+
+}
+
+.boxh {
+    
+    background: lightpink;
+
+}
+
+.boxi {
+    
+    background: lightpink;
+
+}
+
+.boxj {
+    
+    background: lightgreen;
+    grid-column: span 2;
+
+}
+
+.boxk {
+    
+    background: lightpink;
+   
+
+}
+
+.boxl {
+    
+    background: lightpink;
+
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template: 
+        "1fr 1fr 1fr" 200px
+        "1fr 1fr 1fr" 200px
+        "1fr 1fr 1fr" 200px
+        "1fr 1fr 1fr" 200px
+        "1fr 1fr 1fr" 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template:
+        "1fr 1fr" 250px
+        "1fr 1fr" 250px
+        "1fr 1fr" 250px
+        "1fr 1fr" 250px
+        "1fr 1fr" 250px
+        "1fr 1fr" 250px;
+
+    }
+}
