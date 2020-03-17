@@ -8,13 +8,14 @@ body {
     background-size: cover;
     background-color: lightgoldenrodyellow;
     display: grid;
-    grid-template-rows: 200px 3fr 50px .5fr;
+    grid-template-rows: 200px 1.5fr 50px 200px;
     grid-template-areas: 
      "head"
      "main"
      "nav"
      "foot";    
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     color: darkred;
@@ -71,6 +72,10 @@ img {
     
 }
 
+.img2 {
+    padding-bottom: 1em;
+}
+
 hr {
     color: lightgoldenrodyellow;
     margin: 10px 0;
@@ -99,7 +104,7 @@ li {
     grid-area: main;
     background-color: hotpink;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: .5fr .75fr 2fr;
     grid-template-areas: 
       "main1"
       "main2"
@@ -127,6 +132,8 @@ li {
 
 .main1 {
     align-items: center;
+    grid-area: main1;
+
 
 }
 
@@ -135,7 +142,7 @@ li {
     height: auto;
     background-color: darkmagenta;
     color: palegoldenrod;
-    padding: 1em 2em;
+    padding: 1em 2em 2em 2em;
     margin:auto;
     
 }
@@ -143,12 +150,20 @@ li {
 .main2 {
     background-color: indigo;
     text-align: center;
+    grid-area: main2;
 
 }
 
 .main3 {
     background-color: limegreen;
-    padding: .5em;
+    padding: 2em 1.5em;
+    grid-area: main3;
     
+}
+
+.picbox {
+    justify-items: auto;
+    
+    padding: .5em;
 }
 
