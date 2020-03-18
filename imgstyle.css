@@ -130,7 +130,14 @@ img {
         "1fr 1fr" 250px
         "1fr 1fr" 250px
         "1fr 1fr" 250px
+        "1fr 1fr" 250px
+        "1fr 1fr" 250px
         "1fr 1fr" 250px;
 
     }
+
+    .boxd {
+        grid-column: span 2;
+    }
 }
+
