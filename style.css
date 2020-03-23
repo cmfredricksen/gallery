@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-color: lightgoldenrodyellow;
     display: grid;
-    grid-template-rows: 200px 1.5fr 50px 200px;
+    grid-template-rows: .5fe 1.5fr .25fr .5fr;
     grid-template-areas: 
      "head"
      "main"
@@ -105,11 +105,10 @@ li {
     grid-area: main;
     background-color: hotpink;
     display: grid;
-    grid-template-rows: .5fr .75fr 2fr;
-    grid-template-areas: 
-      "main1"
-      "main2"
-      "main3";
+    grid-template:
+    "main1" .5fr
+    "main2" .5fr
+    "main3" 1.5fr;
     
    
 }
