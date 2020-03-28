@@ -1,159 +1,164 @@
 * {
     margin: 0;
-    padding: 0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 body {
-    background: lightgoldenrodyellow;
-    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    background: black;
+    color: darkorchid;
+    line-height: 1.5;
 }
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inconsolata', monospace;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap');
+
+p {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    color: darkorange;
+    text-align: center;
+}
+
+.caption {
+    font-size: smaller;
+    color: deeppink;
+    font-weight: normal;
+    padding: 0;
+}
+
+.caption2 {
+    font-size: smaller;
+    padding: 0;
+
+}
+
 
 .container {
-    width: 100%;
     display: grid;
-    grid-auto-flow: dense;
-    grid-template: 
-    "1fr 1fr 1fr 1fr 1fr" 33.33vh
-    "1fr 1fr 1fr 1fr 1fr" 33.33vh
-    "1fr 1fr 1fr 1fr 1fr" 33.33vh;
-    grid-gap: 5px;
-}
-
-
-
-
-
-.box {
-    position: relative;
-    background-color: darkmagenta;
-   
-}
-
-.boxa {
     
-    background-color: pink;
-    grid-column: span 2;
-    display: inline;
-    image-rendering: auto;
-    
-    
-}
-
-.boxb {
-    background-color: lightgreen;  
-    
-}
-
-.boxc {
-    
-    background-color:lightgreen;
-    
+    grid-gap: 15px;
+    grid-auto-flow: dense; 
+    background-color: black;
+    border: black 15px solid;   
 
 }
 
-.boxd {
-    
-    background-color: pink;
-    grid-row: span 2;
-
+.container2 {
+    background-color: darkorange;
+    color: crimson;
+    border-bottom: crimson 10px solid;
 }
 
-.boxe {
-    
-    background-color: lightgreen;
-    
-
-}
-
-.boxf {
-    
-    background-color: pink;
-    grid-column: span 2;
-
-}
-
-.boxg {
-    
-    background-color: lightgreen;
-
-}
-
-.boxh {
-    
-    background-color: lightgreen;
-
-}
-
-.boxi {
-    
-    background-color: lightgreen;
-
-}
-
-.boxj {
-    
-    background-color: pink;
-    grid-column: span 2;
-
-}
-
-.boxk {
-    
-    background-color: lightgreen;
-
-}
-
-.boxl {
-    
-    background-color: lightgreen;
-
+h2 {
+    font-weight: bold;
 }
 
 img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto;
-    object-fit: scale-down;
+    border-radius: 3%;
+  }
+
+.horizontal {
+    grid-column: span 2;
 }
 
-@media screen and (max-width: 800px) {
-    .container {
-        grid-template: 
-        "1fr 1fr 1fr" 200px
-        "1fr 1fr 1fr" 200px
-        "1fr 1fr 1fr" 200px
-        "1fr 1fr 1fr" 200px
-        "1fr 1fr 1fr" 200px;
-    }
+.nav {
+    grid-column: span 2;
+    display: inline;
+    text-align: center;
+    background-color: darkorange;
+    padding: .5em 0;
 }
 
-@media screen and (max-width: 640px) {
-    .container {
-        grid-template:
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px
-        "1fr 1fr" 250px;
+.p2 {
+    color: black;
+}
 
+.card {
+    background-color: transparent;
+    grid-column: span 2;
+    grid-row: span 2;
+    box-shadow: 1px 1px 5px orange;
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+    font-size: x-large;
+    padding: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkorchid;
+}
+
+.vertical {
+    grid-row: span 2;
+    
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* med screen*/
+@media only screen and (min-width: 600px) {
+
+
+ body {
+     background-color: black;
+ }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        flex-flow: row;
+        background-color: black;
     }
 
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-       margin: .5em;
+        border-radius: 0;
+        
     }
 
-    .boxd {
-        grid-column: span 2;
+    .nav {
+        
+        margin: auto;
     }
+
+    .horizontal {
+        grid-row: span 4;
+        grid-column: span 4;
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    .big {
+        display: none;
+    }
+
 }
+
+
+  
+
+
 
