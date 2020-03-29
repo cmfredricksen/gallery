@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
-    color: darkred
+    color: lightgreen;
 }
 
 img {
@@ -93,6 +93,11 @@ hr {
 ul {
     text-decoration-style: none;
     list-style: none;
+}
+
+.comms {
+    color: hotpink;
+    
 }
 
 li {
