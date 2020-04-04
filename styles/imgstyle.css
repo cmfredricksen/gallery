@@ -139,8 +139,9 @@ a:hover {
     }
 
     .nav {
+        margin-bottom: 1.5em;
         
-        margin: auto;
+        
     }
 
     .horizontal {
@@ -154,6 +155,8 @@ a:hover {
     .big {
         display: none;
     }
+
+    
 
 }
 
