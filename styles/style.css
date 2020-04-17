@@ -7,13 +7,9 @@
 body {
     background-size: cover;
     background-color: lightgoldenrodyellow;
-    display: grid;
-    grid-template-rows: .5fe 1.5fr .25fr .5fr;
-    grid-template-areas: 
-     "head"
-     "main"
-     "nav"
-     "foot";    
+    
+    
+     
 }
 
 
@@ -68,6 +64,7 @@ a:hover {
 
 img {
     width: 100%;
+    max-width: 500px;
     height: auto;
     margin: auto;
     
@@ -77,125 +74,61 @@ img {
     padding-bottom: 1em;
 }
 
-hr {
-    color: lightgoldenrodyellow;
-    margin: 10px 0;
-}
 
 .head {
     grid-area: head;
     background-color: hotpink;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     text-align: center;
 }
 
 ul {
-    text-decoration-style: none;
-    list-style: none;
+    color: white;
+    margin: .5em auto;
 }
 
-.comms {
-    color: hotpink;
-    
-}
 
 li {
     padding: .5em;
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
 
 .main {
-    grid-area: main;
-    background-color: hotpink;
-    display: grid;
-    grid-template:
-    "main1" .5fr
-    "main2" .5fr
-    "main3" 1.5fr;
     
-   
+    background-color: indigo;
+    padding: 1em;
 }
 
 .nav {
-    grid-area: nav;
     background-color: hotpink;
     text-align: center;
-    padding-top: 1em;
+    padding: 1em;
 }
 
 .foot {
-    grid-area: foot;
     color: hotpink;
-    display: grid;
-    grid-template-columns: 80%;
-    margin: auto;
-    padding-left: 1em; 
-    padding-top: 1.5em;;  
+    padding:1em  1.5em;  
 }
 
-.main1 {
-    align-items: center;
-    grid-area: main1;
 
-
-}
 
 .box1 {
-    width: 80%;
+    width: 60%;
     height: auto;
     background-color: darkmagenta;
     color: palegoldenrod;
-    padding: 1em 2em 2em 2em;
-    margin:auto;
-    
-}
-
-.main2 {
-    background-color: indigo;
-    text-align: center;
-    grid-area: main2;
-
-}
-
-.main3 {
-    background-color: limegreen;
-    padding: 1em 1.5em;
-    grid-area: main3;
-    
+    padding: .5em 1em;
+    margin: .5em auto;
+    border: 2px dotted palegoldenrod;    
 }
 
 .picbox {
     justify-items: auto;
-    
     padding: .5em;
 }
 
-@media only screen and (min-width: 500px) {
-
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "head nav"
-        "main main"
-        "foot foot";
-    }
-
-    .main {
-        display: grid;
-        grid-template: "main1 main2 main3" 1fr;
-
-    }
-    
-    .main1 {
-        display: none;
-    }
-
-    .nav { 
-        background-color: indigo;
-    }
+@media only screen and (min-width: 1000px) {
 
     
 }
