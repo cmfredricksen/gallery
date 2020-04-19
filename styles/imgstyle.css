@@ -2,73 +2,62 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    overflow: auto;
+    
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    background: black;
-    color: darkorchid;
-    line-height: 1.5;
+    background-color: black;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    
 
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inconsolata', monospace;
-    margin-top: 11px;
-    margin-bottom: 10px;
-    font-weight: 300;
-    text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap');
+.title-bar {
+    background-color: black;
+    padding: 2em 0;
+    margin-bottom: 2em;
+}
+
+h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin: 0 1rem;
+}
 
 p {
-    margin-top: 5px;
-    margin-bottom: 7px;
-    color: darkorange;
-    text-align: center;
+    margin: 0 1rem;
+}
+
+.p-title {
+    color: deeppink;
 }
 
 .caption {
-    font-size: smaller;
+    font-size: .9rem;
     color: deeppink;
-    font-weight: normal;
     padding: 0;
-}
-
-.caption2 {
-    font-size: smaller;
-    padding: 0;
-
-}
-
-
-.container {
-    display: grid;
-    
-    grid-gap: 15px;
-    grid-auto-flow: dense; 
-    background-color: black;
-    border: black 15px solid;   
-
-}
-
-.container2 {
-    background-color: darkorange;
-    color: crimson;
-    border-bottom: crimson 10px solid;
 }
 
 h2 {
     font-weight: bold;
+    color: deeppink;
+}
+
+h3 {
+    margin: 0 15%;
 }
 
 img {
-    width: 100%;
+    width: 70%;
     height: auto;
-    border-radius: 3%;
+    margin: 1em 15%;
+    max-width: 500px;
   }
 
 .horizontal {
@@ -76,32 +65,33 @@ img {
 }
 
 .nav {
-    grid-column: span 2;
-    display: inline;
+    
+    margin: 3em 0 2em 0;;
     text-align: center;
-    background-color: darkorange;
+    background-color: deepskyblue;
     padding: .5em 0;
 }
 
 .p2 {
-    color: black;
+    color: white;
+    margin: .25em 15%;
 }
 
 .card {
-    background-color: transparent;
-    grid-column: span 2;
-    grid-row: span 2;
-    box-shadow: 1px 1px 5px orange;
+    background-color: deepskyblue;
     width: 90%;
-    margin: auto;
+    margin: 3em auto;
+    color: purple;
+    border: 2px dotted purple;
+    padding: .75em 0;
 }
 
 a {
     text-decoration: none;
-    color: crimson;
-    font-size: x-large;
-    padding: 5px;
-    font-weight: bold;
+    color: deeppink;
+    background: black;
+    padding: 0 1.25rem;
+    border-radius: .5rem;
 }
 
 a:hover {
@@ -118,47 +108,7 @@ a:hover {
     grid-row: span 2;
 }
 
-/* med screen*/
-@media only screen and (min-width: 600px) {
 
-
- body {
-     background-color: black;
- }
-
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        flex-flow: row;
-        background-color: black;
-    }
-
-    img {
-        border-radius: 0;
-        
-    }
-
-    .nav {
-        margin-bottom: 1.5em;
-        
-        
-    }
-
-    .horizontal {
-        grid-row: span 4;
-        grid-column: span 4;
-        width: 90%;
-        margin: auto;
-        
-    }
-
-    .big {
-        display: none;
-    }
-
-    
-
-}
 
 
   
