@@ -56,7 +56,7 @@ h3 {
 img {
     width: 70%;
     height: auto;
-    margin: 1em 15%;
+    margin: 2em 15%;
     max-width: 500px;
   }
 
@@ -96,6 +96,19 @@ a {
 
 a:hover {
     color: darkorchid;
+}
+
+.top {
+    margin: auto;
+    color: white;
+    padding: .25em 1.25em;
+    border: 1px solid deeppink;
+    margin: 2em 15%;
+
+}
+
+.container2 {
+    padding: 2em 1em;
 }
 
 .vertical {
