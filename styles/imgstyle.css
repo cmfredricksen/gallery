@@ -128,9 +128,8 @@ a:hover {
 
 @media only screen and (min-width: 720px) {
     
-    body {
-        background-color: #303030;
-    }
+    
+    
     .wrapper {
         display: grid;
         
@@ -154,6 +153,17 @@ a:hover {
         margin: 2em 15%;
         border-radius: 1em;
 
+    }
+
+    .photo-box {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        width: 100vw;
+
+    }
+
+    .photo-box-items {
+        top: 0;
     }
     
 }
