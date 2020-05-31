@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: palevioletred;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper {
+    
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 90vw;
+    border: 15px solid goldenrod;
+    margin-top: 2rem;
+}
+
+.title-bar {
+    padding: 2rem 0;
+    border-bottom: 15px solid goldenrod;
+}
+
+h1 {
+    color: darkslateblue;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+p {
+    color: black;
+    line-height: 1.25rem;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: purple;
+    margin: 1rem 0;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: crimson;
+    background-color: palevioletred;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+.nav {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+    background-color: plum;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.nav-link {
+    border: 5px solid goldenrod;
+    padding: 1rem 1.5rem;
+    
+}
+
+.container2 {
+    padding: 3rem 1rem;
+    border: 5px solid goldenrod;
+    color: darkred;
+
+}
+
+.top {
+    background-color: plum;
+    color: darkslateblue;
+    padding: .5rem 1rem;
+    border: 3px solid darkslateblue;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 2rem;
+}
+
