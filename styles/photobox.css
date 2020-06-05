@@ -16,6 +16,8 @@ body {
     padding: 2rem;
     align-items: center;
     justify-content: space-between;
+    max-width: 98vw;
+    
 }
 
 img {
@@ -62,7 +64,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: crimson;
+    color: goldenrod;
     background-color: palevioletred;
 }
 
@@ -99,10 +101,48 @@ a:visited {
     background-color: plum;
     color: darkslateblue;
     padding: .5rem 1rem;
-    border: 3px solid darkslateblue;
+    border: 3px solid goldenrod;
     align-items: center;
     justify-content: center;
     align-self: center;
     margin-top: 2rem;
 }
 
+ @media only screen and (min-width: 1000px) {
+        body {
+            background-color: palegoldenrod;
+        }
+
+        h1 {
+            color: whitesmoke;
+            text-shadow: 2px 2px 2px darkviolet;
+        }
+
+        h4 {
+            color: darkviolet;
+            font-weight: 600;
+        }
+
+        .photo-box {
+            display: flex;
+            flex-flow: wrap;
+            max-width: 90vw;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+
+        .photo-box-items {
+            max-width: 40vw;
+        }
+
+        img {
+            max-width: 50%;
+        }
+
+        .top {
+            display: none;
+        }
+
+        
+
+ }
